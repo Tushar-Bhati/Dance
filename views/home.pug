@@ -1,0 +1,63 @@
+extends base.pug
+block scripts
+  script(src="/static/index.js")
+
+block style
+    style
+      include ../static/style.css
+
+block content       
+    nav#navbar 
+        ul 
+            div#logo
+                img(src="/static/img/4.png")
+                |  BDA
+            li #[a(href="/") Home] 
+            li #[a(href="/") About Us] 
+            li #[a(href="/") Services] 
+            li #[a(href="/") Class info]
+            li #[a(href="/") Contact Us]
+
+    section#introSection
+        div WELCOME TO BHATI'S DANCE ACADEMY 
+        div Eat Sleep Dance Repeat
+
+    section#OurMissionSection
+        h2 Our Mission
+        
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/4.ng")
+                div.card-content
+                    p This is the best dance academy
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/5.pg")
+                div.card-content
+                    p This is the best dance academy
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/6.ng")
+
+                div.card-content
+                    p This is the best dance academy  s  
+       
+          
+    section#sponsorsSection
+        h2 OUR SPONSORS
+        div#Sponsors
+            img(src="/static/img/logo1.pg", alt="Sponsor Img", class="SPImg")           
+            img(src="/static/img/logo2.ng", alt="Sponsor Img", class="SPImg")           
+            img(src="/static/img/logo3.ng", alt="Sponsor Img", class="SPImg")           
+            img(src="/static/img/logo4.ng", alt="Sponsor Img", class="SPImg")           
+
+
+        
